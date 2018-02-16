@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+        number:
+        <input type="text" id="num">
+        <button onclick="table()">
+            Multiplication Table
+        </button>
+    <p id="a1"></p>
+    <p id="a2"></p>
+    <p id="a3"></p>
+    <p id="a4"></p>
+    <p id="a5"></p>
+    <p id="a6"></p>
+    <p id="a7"></p>
+    <p id="a8"></p>
+    <p id="a9"></p>
+    <p id="a10"></p>
+    <script>
+        function table() {
+            var num = document.getElementById('num').value;
+            //console.log(typeof(number));
+            for (i = 1; i < 11; i++) {
+                document.getElementById("a" + i).innerHTML = Number(num) * i;
+            }
+        }
+    </script>
+</body>
+
+</html>
